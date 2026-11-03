@@ -1,0 +1,155 @@
+:root {
+  --ink: #1c1f23;
+  --ink-soft: #5a6069;
+  --rule: #e2e5e9;
+  --page: #ffffff;
+  --accent: #1f4e79;
+  --band: #f6f7f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #e7e9ec;
+    --ink-soft: #a2a9b2;
+    --rule: #333941;
+    --page: #16181b;
+    --accent: #8ab4de;
+    --band: #1d2024;
+  }
+}
+
+:root[data-theme="dark"] {
+  --ink: #e7e9ec;
+  --ink-soft: #a2a9b2;
+  --rule: #333941;
+  --page: #16181b;
+  --accent: #8ab4de;
+  --band: #1d2024;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+header.site {
+  border-bottom: 1px solid var(--rule);
+  background: var(--band);
+}
+
+header.site .inner,
+main,
+footer.site .inner {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header.site .inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.company {
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 1.0625rem;
+}
+
+.tagline {
+  margin: 2px 0 0;
+  color: var(--ink-soft);
+  font-size: 0.8125rem;
+}
+
+main { padding-top: 32px; padding-bottom: 56px; }
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 1.125rem;
+  margin: 2.25em 0 0.5em;
+  padding-top: 0.75em;
+  border-top: 1px solid var(--rule);
+  letter-spacing: -0.005em;
+}
+
+p, li { margin: 0 0 0.9em; }
+
+ul { padding-left: 1.3em; }
+
+a { color: var(--accent); }
+
+.meta {
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+  margin-bottom: 2em;
+}
+
+.callout {
+  background: var(--band);
+  border-left: 3px solid var(--accent);
+  padding: 14px 16px;
+  margin: 1.5em 0;
+}
+
+.callout p:last-child { margin-bottom: 0; }
+
+.contact {
+  margin-top: 0.5em;
+  color: var(--ink-soft);
+}
+
+footer.site {
+  border-top: 1px solid var(--rule);
+  background: var(--band);
+  color: var(--ink-soft);
+  font-size: 0.8125rem;
+}
+
+footer.site .inner { padding-top: 20px; padding-bottom: 28px; }
+
+footer.site a { color: var(--accent); }
+
+nav.pages { margin: 0 0 0.5em; }
+
+nav.pages a { margin-right: 1.25em; }
+
+.index-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2em;
+}
+
+.index-list li {
+  border-top: 1px solid var(--rule);
+  padding: 18px 0;
+  margin: 0;
+}
+
+.index-list a {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.index-list a:hover { text-decoration: underline; }
+
+.index-list p {
+  margin: 4px 0 0;
+  color: var(--ink-soft);
+  font-size: 0.9375rem;
+}
