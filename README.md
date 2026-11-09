@@ -10,7 +10,7 @@ Static pages served at **https://legal.guernseyostergard.com** via GitHub Pages:
 US mobile carriers require a publicly reachable privacy policy and terms page
 before a business may send text messages (A2P 10DLC campaign registration).
 These two URLs are what the Twilio campaign registration points at. They back
-the employee safety text message programme, which delivers the weekly safety
+the employee safety text message program, which delivers the weekly safety
 topic each employee must read and acknowledge under WAC 296-155-110.
 
 They live here rather than in the main WordPress site because admin access to
