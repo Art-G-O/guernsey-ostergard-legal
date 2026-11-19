@@ -153,3 +153,28 @@ nav.pages a { margin-right: 1.25em; }
   color: var(--ink-soft);
   font-size: 0.9375rem;
 }
+
+/* Signature block on the acknowledgment form. Rules to write on, that stay
+   readable on a phone and print cleanly on paper. */
+dl.signature {
+  margin: 1.5rem 0 2rem;
+}
+dl.signature dt {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1.25rem;
+}
+dl.signature dd {
+  margin: 0.25rem 0 0;
+  border-bottom: 1px solid #333;
+  height: 2.1rem;
+}
+
+/* This page exists to be printed and signed, so make that case work. */
+@media print {
+  header.site, footer.site { display: none; }
+  main { max-width: none; margin: 0; padding: 0; }
+  .callout { border: 1px solid #333; }
+  a { text-decoration: none; color: inherit; }
+  dl.signature dd { height: 2.4rem; }
+}
