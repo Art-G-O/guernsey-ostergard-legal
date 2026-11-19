@@ -1,0 +1,4 @@
+# Never let line-ending conversion touch binaries - it corrupts them silently.
+*.pdf binary
+*.png binary
+*.jpg binary
